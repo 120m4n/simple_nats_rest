@@ -1,0 +1,28 @@
+@server=http://localhost:8080
+
+### get all items
+GET {{server}}/items HTTP/1.1
+
+
+### get item
+GET {{server}}/items/1 HTTP/1.1
+
+### add item
+POST {{server}}/items HTTP/1.1
+Content-Type: application/json
+
+{
+    "ID"    : "1",
+    "name": "item1",
+    "description": "item1 description"
+}
+
+### add item
+POST {{server}}/items HTTP/1.1
+Content-Type: application/json
+
+{
+    "ID"    : "2",
+    "name": "item2",
+    "description": "item2 description"
+}
